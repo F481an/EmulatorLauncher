@@ -1,0 +1,23 @@
+#TopBar {
+    -fx-background-color: #3D4956;
+}
+
+#ListMenu {
+    -fx-background-color: #3D4956;
+}
+
+#ListOfEmulators.list-view, .list-cell {
+    -fx-background-color: #3D4956;
+    -fx-text-fill: white;
+    -fx-font-size: 16px
+}
+
+.list-cell:selected {
+    -fx-background-color: #526274;
+    -fx-text-fill: orange;
+}
+
+.button {
+    -fx-background-color: #3D4956;
+}
+
