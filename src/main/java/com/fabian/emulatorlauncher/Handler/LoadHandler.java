@@ -10,7 +10,7 @@ import java.util.List;
 
 public class LoadHandler {
     List<EmulatorModel> emulatorModels = new LinkedList<>();
-    String FilePath = "C:\\Users\\Fabian\\Desktop\\Database.csv";
+    String FilePath = "C:\\Users\\Fabian\\Desktop\\Emulation\\Database.csv";
 
     public LoadHandler() {
         BufferedReader reader = null;

@@ -1,7 +1,5 @@
 package com.fabian.emulatorlauncher.Datamodel;
 
-import java.nio.file.Path;
-
 public class EmulatorModel {
 
     String name;
