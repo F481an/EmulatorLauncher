@@ -24,10 +24,7 @@
                 </GridPane>
             </children>
         </AnchorPane>
-        <AnchorPane fx:id="ListMenu" layoutY="88.0" prefHeight="358.0" prefWidth="305.0">
-            <children>
-                <ListView fx:id="ListOfEmulators" layoutX="14.0" layoutY="14.0" prefHeight="329.0" prefWidth="276.0" />
-            </children>
-        </AnchorPane>
+        <fx:include source="ListMenuPage.fxml" fx:id="ListMenuPage"/>
+        <fx:include source="SettingsPage.fxml" fx:id="SettingsPage"/>
     </children>
 </AnchorPane>
