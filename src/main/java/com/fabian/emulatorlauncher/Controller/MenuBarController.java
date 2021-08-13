@@ -12,6 +12,8 @@ public class MenuBarController {
     @FXML
     public AnchorPane ListMenuPage;
     @FXML
+    public AnchorPane SettingsPage;
+    @FXML
     private Button EmulatorListButton;
     @FXML
     private Button SettingsButton;
@@ -20,12 +22,18 @@ public class MenuBarController {
 
     @FXML
     public void initialize() {
+        ListMenuPage.setVisible(true);
+        SettingsPage.setVisible(false);
     }
 
     public void EmulatorList(MouseEvent mouseEvent) {
+        ListMenuPage.setVisible(true);
+        SettingsPage.setVisible(false);
     }
 
     public void Settings(MouseEvent mouseEvent) {
+        ListMenuPage.setVisible(false);
+        SettingsPage.setVisible(true);
     }
 
     public void Close(MouseEvent mouseEvent) {

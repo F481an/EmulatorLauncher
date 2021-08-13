@@ -25,5 +25,6 @@
             </children>
         </AnchorPane>
         <fx:include source="ListMenuPage.fxml" fx:id="ListMenuPage"/>
+        <fx:include source="SettingsPage.fxml" fx:id="SettingsPage"/>
     </children>
 </AnchorPane>

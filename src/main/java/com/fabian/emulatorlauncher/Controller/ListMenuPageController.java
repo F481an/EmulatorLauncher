@@ -1,5 +1,6 @@
 package com.fabian.emulatorlauncher.Controller;
 
+import com.fabian.emulatorlauncher.Datamodel.EmulatorModel;
 import javafx.fxml.FXML;
 import javafx.scene.control.ListView;
 
@@ -11,9 +12,7 @@ public class ListMenuPageController {
 
     @FXML
     public void initialize() {
-        ListOfEmulators.getItems().add("sd");
-        ListOfEmulators.getItems().add("sd");
-        ListOfEmulators.getItems().add("sd");
-        ListOfEmulators.getItems().add("sd");
+        ListOfEmulators.getItems().add(new EmulatorModel().toString());
+
     }
 }

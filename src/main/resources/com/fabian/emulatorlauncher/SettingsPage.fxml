@@ -9,5 +9,5 @@
 <AnchorPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
             fx:controller="com.fabian.emulatorlauncher.Controller.SettingsPageController"
-            prefHeight="400.0" prefWidth="600.0">
+            layoutY="80.0" prefHeight="366.0" prefWidth="305.0">
 </AnchorPane>
