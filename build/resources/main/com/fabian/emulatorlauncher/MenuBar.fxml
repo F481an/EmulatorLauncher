@@ -17,14 +17,14 @@
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                     </rowConstraints>
                     <children>
-                        <Button fx:id="EmulatorList" mnemonicParsing="false" onMouseClicked="#EmulatorList" text="Button" />
-                        <Button fx:id="Settings" mnemonicParsing="false" onMouseClicked="#Settings" text="Button" GridPane.columnIndex="1" />
-                        <Button fx:id="Close" mnemonicParsing="false" onMouseClicked="#Close" text="Button" GridPane.columnIndex="2" />
+                        <Button fx:id="EmulatorListButton" mnemonicParsing="false" onMouseClicked="#EmulatorList" text="" />
+                        <Button fx:id="SettingsButton" mnemonicParsing="false" onMouseClicked="#Settings" text="" GridPane.columnIndex="1" />
+                        <Button fx:id="CloseButton" mnemonicParsing="false" onMouseClicked="#Close" text="" GridPane.columnIndex="2" />
                     </children>
                 </GridPane>
             </children>
         </AnchorPane>
-        <fx:include source="ListMenuPage.fxml" fx:id="ListMenuPage"/>
-        <fx:include source="SettingsPage.fxml" fx:id="SettingsPage"/>
+        <fx:include fx:id="ListMenuPage" source="ListMenuPage.fxml" />
+        <fx:include fx:id="SettingsPage" source="SettingsPage.fxml" />
     </children>
 </AnchorPane>
