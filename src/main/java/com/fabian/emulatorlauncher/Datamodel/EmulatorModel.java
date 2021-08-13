@@ -5,13 +5,13 @@ import java.nio.file.Path;
 public class EmulatorModel {
 
     String name;
-    Path exeFilePath;
-    Path SaveFolderPath;
+    String exeFilePath;
+    String SaveFolderPath;
 
     public EmulatorModel() {
     }
 
-    public EmulatorModel(String name, Path exeFilePath, Path saveFolderPath) {
+    public EmulatorModel(String name, String exeFilePath, String saveFolderPath) {
         this.name = name;
         this.exeFilePath = exeFilePath;
         SaveFolderPath = saveFolderPath;
@@ -25,19 +25,19 @@ public class EmulatorModel {
         this.name = name;
     }
 
-    public Path getExeFilePath() {
+    public String getExeFilePath() {
         return exeFilePath;
     }
 
-    public void setExeFilePath(Path exeFilePath) {
+    public void setExeFilePath(String exeFilePath) {
         this.exeFilePath = exeFilePath;
     }
 
-    public Path getSaveFolderPath() {
+    public String getSaveFolderPath() {
         return SaveFolderPath;
     }
 
-    public void setSaveFolderPath(Path saveFolderPath) {
+    public void setSaveFolderPath(String saveFolderPath) {
         SaveFolderPath = saveFolderPath;
     }
 
