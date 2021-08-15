@@ -11,16 +11,16 @@ import java.util.zip.ZipOutputStream;
 
 
 public class ZipTask {
-    List<String> filesListInDir = new ArrayList<String>();
+    List<String> filesListInDir = new ArrayList<>();
 
-    public ZipTask(File dir, File desFolder) {
+    public ZipTask(File dir, File desFolder,String ZipFileName) {
         try {
             populateFilesList(dir);
             System.out.println(desFolder + "\\" + dir.getName() + ".zip");
-            FileOutputStream fos = new FileOutputStream(desFolder + "\\" + dir.getName() + ".zip");
+            FileOutputStream fos = new FileOutputStream(desFolder + "\\" + ZipFileName + ".zip");
             ZipOutputStream zos = new ZipOutputStream(fos);
             for (String filePath : filesListInDir) {
-                ZipEntry ze = new ZipEntry(filePath.substring(dir.getAbsolutePath().length() + 1, filePath.length()));
+                ZipEntry ze = new ZipEntry(filePath.substring(dir.getAbsolutePath().length() + 1));
                 zos.putNextEntry(ze);
                 FileInputStream fis = new FileInputStream(filePath);
                 byte[] buffer = new byte[1024];

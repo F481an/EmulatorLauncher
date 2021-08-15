@@ -1,5 +1,6 @@
 package com.fabian.emulatorlauncher.Handler;
 
+import com.fabian.emulatorlauncher.Datamodel.ConfigModel;
 import com.fabian.emulatorlauncher.Datamodel.EmulatorModel;
 
 import java.io.BufferedReader;
@@ -10,12 +11,11 @@ import java.util.List;
 
 public class LoadHandler {
     List<EmulatorModel> emulatorModels = new LinkedList<>();
-    String FilePath = "C:\\Users\\Fabian\\Desktop\\Emulation\\Database.csv";
 
     public LoadHandler() {
         BufferedReader reader = null;
         try {
-            reader = new BufferedReader(new FileReader(FilePath));
+            reader = new BufferedReader(new FileReader(new ConfigModel().getDatabasePath()));
             String line = reader.readLine();
             line = reader.readLine();
             while (line != null) {

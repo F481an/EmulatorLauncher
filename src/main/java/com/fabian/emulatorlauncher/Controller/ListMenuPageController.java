@@ -28,7 +28,7 @@ public class ListMenuPageController {
 
     @FXML
     public void BackupButton(MouseEvent mouseEvent) {
-    new BackupHandler(emulatorModels);
+        new BackupHandler(emulatorModels);
     }
 
     public void initList(List<EmulatorModel> emulatorModels) {
