@@ -16,7 +16,6 @@ public class ZipTask {
     public ZipTask(File dir, File desFolder,String ZipFileName) {
         try {
             populateFilesList(dir);
-            System.out.println(desFolder + "\\" + dir.getName() + ".zip");
             FileOutputStream fos = new FileOutputStream(desFolder + "\\" + ZipFileName + ".zip");
             ZipOutputStream zos = new ZipOutputStream(fos);
             for (String filePath : filesListInDir) {
