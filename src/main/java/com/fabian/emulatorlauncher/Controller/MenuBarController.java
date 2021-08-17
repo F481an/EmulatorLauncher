@@ -3,6 +3,7 @@ package com.fabian.emulatorlauncher.Controller;
 import com.fabian.emulatorlauncher.Handler.LoadHandler;
 import javafx.animation.RotateTransition;
 import javafx.application.Platform;
+import javafx.beans.binding.Bindings;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.input.MouseEvent;
@@ -32,6 +33,16 @@ public class MenuBarController {
         ListMenuPageController.initList(new LoadHandler().getEmulatorModels());
         ListMenuPage.setVisible(true);
         SettingsPage.setVisible(false);
+
+        EmulatorListButton.styleProperty().bind(Bindings.when(EmulatorListButton.hoverProperty())
+                .then("-fx-background-color: #e69e6d")
+                .otherwise("-fx-background-color: #a8a8a7"));
+        SettingsButton.styleProperty().bind(Bindings.when(SettingsButton.hoverProperty())
+                .then("-fx-background-color: #e69e6d")
+                .otherwise("-fx-background-color: #a8a8a7"));
+        CloseButton.styleProperty().bind(Bindings.when(CloseButton.hoverProperty())
+                .then("-fx-background-color: #e69e6d")
+                .otherwise("-fx-background-color: #a8a8a7"));
     }
 
     @FXML
