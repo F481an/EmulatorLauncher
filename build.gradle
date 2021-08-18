@@ -23,6 +23,7 @@ repositories {
 javafx {
     version = '15.0.1'
     modules = ['javafx.controls', 'javafx.fxml', 'javafx.web']
+
 }
 
 compileJava {
@@ -39,7 +40,7 @@ dependencies {
 launch4j {
     mainClassName = "com.fabian.emulatorlauncher.Main"
     outfile = "EmulatorLauncher.exe"
-    // icon = "${projectDir}/resources/icon.ico"
+    icon = "${projectDir}/icons/icon.ico"
     bundledJrePath = "jre"
     jvmOptions = [
             '--module-path=mod',
