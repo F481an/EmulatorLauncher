@@ -40,7 +40,7 @@ dependencies {
 launch4j {
     mainClassName = "com.fabian.emulatorlauncher.Main"
     outfile = "EmulatorLauncher.exe"
-    icon = "${projectDir}/icons/icon.ico"
+    icon = "${projectDir}/src/main/resources/icon.ico"
     bundledJrePath = "jre"
     jvmOptions = [
             '--module-path=mod',
